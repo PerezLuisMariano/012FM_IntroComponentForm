@@ -1,7 +1,7 @@
-## Frontend Mentor - Stats preview card component
+## Intro Component Form
 
 ### Screenshot
-![version-desk](design/me/)
+![version-desk](design/desing.png)
 
 
 ### Links
