@@ -1,0 +1,25 @@
+:root{
+    /* COLOR  */
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%);
+
+    /* SIZE FONT  */
+    --fontSmallMobile: 1.1rem;
+    --fontNormalMobile: 1.5rem;
+    --fontBigMobile: 2.9rem;
+    --fontSmallDesk: 1.4rem;
+    --fontNormalDesk: 2.1rem;
+    --fontBigDesk: 6.8rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
