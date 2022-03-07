@@ -18,32 +18,32 @@
             </section>
             <div class="section2">
                 <a class="button-cta" href="#sendFirstName">
-                    Try it free 7 days <span>then $20/mo. thereafter</span>
+                    <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
                 </a>
                 <form class="form" >
                     <div class="form__first-name" >
                         <input type="text" id="sendFirstName" placeholder="First Name" name="form">
                         <span class="icon-error"></span>
-                        <p class="output-error"></p>
                     </div>
+                    <p class="output-error">First Name cannot be empty</p>
                     <div class="form__last-name">
                         <input type="text" id="sendLastName" placeholder="Last Name">
                         <span class="icon-error"></span>
-                        <p class="output-error"></p>
                     </div>
+                    <p class="output-error">Last Name cannot be empty</p>
                     <div class="form__email">
                         <input type="text" id="sendEmail" placeholder="Email Address">
                         <span class="icon-error"></span>
-                        <p class="output-error"></p>
                     </div>
+                    <p class="output-error">Looks like is not an email</p>
                     <div class="form__password">
                         <input type="password" id="sendPassword" placeholder="Password">
                         <span class="icon-error"></span>
-                        <p class="output-error"></p>
                     </div>
-                    <button type="button" class="button_form">Claim your free trial </button>
+                    <p class="output-error">Passwod cannot be empty</p>
+                    <button class="form_button" type="button" >Claim your free trial </button>
+                    <p class="form_terms-services">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
                 </form>
-                <p class="terms-services">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
             </div>
         </main>
         <script src="./script/script.js"></script>

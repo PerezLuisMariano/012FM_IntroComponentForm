@@ -4,7 +4,9 @@
     --green: hsl(154, 59%, 51%);
     --Blue: hsl(248, 32%, 49%);
     --darkBlue: hsl(249, 10%, 26%);
+    --darkBlueAlfa: hsla(249, 10%, 26%, 0.3);
     --grayishBlue: hsl(246, 25%, 77%);
+    --withe: #fff;
 
     /* SIZE FONT  */
     --fontSmallMobile: 1.1rem;
@@ -23,3 +25,172 @@ html{
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--red);
+}
+body::after{
+    z-index: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(../assets/images/bg-intro-mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* MAIN  */
+main{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    width: 87%;
+    max-width: 425px;
+    height: auto;
+}
+
+/* MAIN -> SECTION 1  */
+main .section1{
+    display: grid;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+    margin: 90px 0 0 0;
+}
+main .section1 h1{
+    font-size: var(--fontBigMobile);
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    color: var(--withe);
+}
+main .section1 p{
+    font-size: var(--fontNormalMobile);
+    font-weight: 400;
+    text-align: center;
+    color: var(--withe);
+}
+
+/* MAIN -> SECTION 2  */
+main .section2{
+    display: grid;
+    gap: 25px;
+    width: 100%;
+    height: auto;
+    margin: 70px 0 0 0;
+}
+main .section2 .button-cta{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: min-content;
+    place-content: center;
+    width: 100%;
+    height: 88px;
+    font-size: var(--fontNormalMobile);
+    font-weight: 700;
+    text-align: center;
+    color: var(--withe);
+    text-decoration: none;
+    background-color: var(--Blue);
+    border-radius: 12px;
+    box-shadow: 0px 10px 0px var(--darkBlueAlfa);
+}
+main .section2 .button-cta span{
+    font-weight: 400;
+    color: var(--withe);
+
+}
+
+/* MAIN -> SECTION 2 --> FORM SECTION */
+main .section2 .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--withe);
+    border-radius: 12px;
+    padding: 23px 0 23px 0;
+    box-shadow: 0px 10px 0px var(--darkBlueAlfa);
+    margin: 0 0 100px 0; /* TEmporal*/
+}
+main .section2 .form div{
+    display: grid;
+    grid-template-columns: 82%  18%;
+    grid-template-rows: 100%;
+    width: 85%;
+    height: 55px;
+    background-color: var(--withe);
+    border-radius: 5px;
+    border: 1.5px solid var(--darkBlueAlfa);
+    margin: 10px 0 0 0;
+}
+main .section2 .form div input{
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: var(--fontNormalMobile);
+    font-weight: 500;
+    padding: 0 0 0 20px;
+    border: none;
+}
+main .section2 .form div input:enabled{
+    font-family: inherit;
+    font-size: var(--fontNormalMobile);
+    font-weight: 600;
+    outline: none;
+}
+main .section2 .form div span{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/icon/icon-error.svg);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+main .section2 .form .output-error{
+    width: 85%;
+    font-size: var(--fontSmallMobile);
+    font-weight: 500;
+    text-align: end;
+    font-style:italic;
+    color: var(--red);
+}
+main .section2 .form_button{
+    width: 85%;
+    height: 50px;
+    background-color: var(--green);
+    color: var(--withe);
+    border: 0;
+    font-size: var(--fontNormalMobile);
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    box-shadow: 0 5px 0 0 #31b97f;
+}
+main .section2 .form_terms-services{
+    width: 85%;
+    color: var(--grayishBlue);
+    text-align: center;
+    font-size: var(--fontSmallMobile);
+    font-weight: 400;
+    margin: 15px 0 0 0;
+} 
+main .section2 .form_terms-services a{
+    color: var(--red);
+    font-size: var(--fontSmallMobile);
+    font-weight: 700;
+    text-decoration: none;
+} 
