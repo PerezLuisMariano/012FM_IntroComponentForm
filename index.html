@@ -16,32 +16,32 @@
                 <h1>Learn to code by watching others</h1>
                 <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
             </section>
-            <div class="section2">
+            <div class="section2" >
                 <a class="button-cta" href="#sendFirstName">
                     <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
                 </a>
-                <form class="form" >
+                <form class="form" id="form">
                     <div class="form__first-name" >
-                        <input type="text" id="sendFirstName" placeholder="First Name" name="form">
+                        <input type="text" id="sendFirstName" placeholder="First Name"  autocomplete="off" name="firstName">
                         <span class="icon-error"></span>
                     </div>
-                    <p class="output-error">First Name cannot be empty</p>
+                    <p class="letter-error">First Name cannot be empty or invalid</p>
                     <div class="form__last-name">
-                        <input type="text" id="sendLastName" placeholder="Last Name">
+                        <input type="text" id="sendLastName" placeholder="Last Name"  autocomplete="off" name="lastName">
                         <span class="icon-error"></span>
                     </div>
-                    <p class="output-error">Last Name cannot be empty</p>
+                    <p class="letter-error">Last Name cannot be empty or invalid</p>
                     <div class="form__email">
-                        <input type="text" id="sendEmail" placeholder="Email Address">
+                        <input type="text" id="sendEmail" placeholder="Email Address"  autocomplete="off" name="email">
                         <span class="icon-error"></span>
                     </div>
-                    <p class="output-error">Looks like is not an email</p>
+                    <p class="letter-error">Looks like is not an email</p>
                     <div class="form__password">
-                        <input type="password" id="sendPassword" placeholder="Password">
+                        <input type="password" id="sendPassword" placeholder="Password"  autocomplete="off" name="password">
                         <span class="icon-error"></span>
                     </div>
-                    <p class="output-error">Passwod cannot be empty</p>
-                    <button class="form_button" type="button" >Claim your free trial </button>
+                    <p class="letter-error">Passwod cannot be empty</p>
+                    <button class="form_button" type="submit" id="sendForm">Claim your free trial </button>
                     <p class="form_terms-services">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
                 </form>
             </div>
