@@ -1,7 +1,7 @@
 ## Intro Component Form
 
 ### Screenshot
-![version-desk](design/desing.png)
+![version-desk](design/desk-version.png)
 
 
 ### Links
