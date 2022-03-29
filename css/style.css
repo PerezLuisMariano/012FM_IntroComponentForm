@@ -12,9 +12,9 @@
     --fontSmallMobile: 1.1rem;
     --fontNormalMobile: 1.5rem;
     --fontBigMobile: 2.9rem;
-    --fontSmallDesk: 1.4rem;
-    --fontNormalDesk: 2.1rem;
-    --fontBigDesk: 6.8rem;
+    --fontSmallDesk: 1.2rem;
+    --fontNormalDesk: 1.6rem;
+    --fontBigDesk: 5.1rem;
 }
 *{
     padding: 0;
@@ -50,8 +50,7 @@ body::after{
 
 
 /* MAIN  */
-main{
-   
+main{  
     z-index: 1;
     display: grid;
     grid-template-columns: 100%;
@@ -106,12 +105,15 @@ main .section2 .button-cta{
     background-color: var(--Blue);
     border-radius: 12px;
     box-shadow: 0px 10px 0px var(--darkBlueAlfa);
+    animation-name: buttonCTA;
 }
 main .section2 .button-cta span{
     font-weight: 400;
     color: var(--withe);
-
 }
+
+
+
 
 /* MAIN -> SECTION 2 --> FORM SECTION */
 main .section2 .form{
@@ -197,3 +199,120 @@ main .section2 .form_terms-services a{
     font-weight: 700;
     text-decoration: none;
 } 
+
+
+/* FOOTER
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+}
+footer .attribution h2{
+    font-size: var(--fontSmallDesk);
+    color: var(--darkBlue);
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: center;
+}
+footer .attribution a{
+    font-size: var(--fontSmallDesk);
+    color: var(--withe);
+    text-decoration: none;
+    font-weight: 500;
+}
+ */
+
+@media (min-width: 600px) {
+    /* MAIN  */
+    main{  
+        max-width: 500px;
+        gap: 25px;
+    }
+    
+    /* MAIN -> SECTION 1  */  
+    main .section1 h1{
+        font-size: var(--fontBigDesk);
+        font-weight: 700;
+        line-height: 65px;
+    }
+}
+
+@media (min-width: 1000px) {
+    body::after{
+        background-image: url(../assets/images/bg-intro-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* MAIN  */
+    main{
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto;
+        width: 80%;
+        max-width: 1152px;
+        height: 100vh;
+    }
+    main .section1{
+        max-width: 500px;
+        align-content: center;
+        justify-self: start;
+        margin: unset;
+    }
+    /* MAIN -> SECTION 1  */  
+    main .section1 h1{
+        font-size: var(--fontBigDesk);
+        line-height: 65px;
+        text-align: start;
+    }
+    main .section1 p{
+        font-size: var(--fontNormalDesk);
+        text-align: start;
+    }
+    main .section2{
+        align-content: center;
+        justify-self: end;
+        max-width: 540px;
+        margin: unset;
+    }
+    main .section2 .button-cta{
+        font-size: var(--fontNormalDesk);
+        font-weight: 700;
+        text-align: center;
+        animation-name: buttonCTA;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 3s;
+    }
+    @keyframes buttonCTA {
+        65%{transform: scale(1); }
+        70%{transform: scale(1.05); }
+        100%{transform: scale(1); }
+    }
+
+    main .section2 .form{
+        margin: unset;
+    }
+    main .section2 .form div input{
+        font-size: var(--fontNormalDesk);
+    }
+    main .section2 .form div input:enabled{
+        font-size: var(--fontNormalDesk);
+    }
+    main .section2 .form .letter-error{
+        font-size: var(--fontSmallDesk);
+    }
+    main .section2 .form_button{
+        font-size: var(--fontNormalDesk);
+    }
+    main .section2 .form_terms-services{
+        font-size: var(--fontSmallDesk);
+    } 
+    main .section2 .form_terms-services a{
+        font-size: var(--fontSmallDesk);
+    } 
+    
+}
